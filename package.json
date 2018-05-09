@@ -1,6 +1,6 @@
 {
   "name": "do-adal-angular",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Wrapper for Azure Active Directory Authentication Library to support Angular (> v5)",
   "main": "index.js",
   "scripts": {

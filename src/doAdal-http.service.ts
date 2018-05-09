@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Rx';
-import { Adal5Service } from './adal5.service';
+import { DoAdalService } from './doAdal.service';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
@@ -7,34 +7,34 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
  *
  *
  * @export
- * @class Adal5HTTPService
+ * @class DoAdalHttpService
  */
 @Injectable()
-export class Adal5HTTPService {
+export class DoAdalHttpService {
 
   /**
    *
    *
    * @static
    * @param {HttpClient} http
-   * @param {Adal5Service} service
+   * @param {DoAdalService} service
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
-  static factory(http: HttpClient, service: Adal5Service) {
-    return new Adal5HTTPService(http, service);
+  static factory(http: HttpClient, service: DoAdalService) {
+    return new DoAdalHttpService(http, service);
   }
 
   /**
-   * Creates an instance of Adal5HTTPService.
+   * Creates an instance of DoAdalHttpService.
    * @param {HttpClient} http
-   * @param {Adal5Service} service
+   * @param {DoAdalService} service
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   constructor(
     private http: HttpClient,
-    private service: Adal5Service
+    private service: DoAdalService
   ) { }
 
   /**
@@ -44,7 +44,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   get(url: string, options: {
     body?: any;
@@ -66,7 +66,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   post(url: string, body: any, options: {
     body?: any;
@@ -88,7 +88,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   delete(url: string, options: {
     body?: any;
@@ -110,7 +110,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   patch(url: string, body: any, options: {
     body?: any;
@@ -133,7 +133,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   put(url: string, body: any, options: {
     body?: any;
@@ -155,7 +155,7 @@ export class Adal5HTTPService {
    * @param {*} [options]
    * @returns {Observable<any>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   head(url: string, options: {
     body?: any;
@@ -178,7 +178,7 @@ export class Adal5HTTPService {
    * @param {RequestOptionsArgs} options
    * @returns {Observable<string>}
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   private sendRequest(method: string, url: string, options: {
     body?: any;
@@ -220,7 +220,7 @@ export class Adal5HTTPService {
    * @param {*} error
    * @returns
    *
-   * @memberOf Adal5HTTPService
+   * @memberOf DoAdalHttpService
    */
   private handleError(error: any) {
     // In a real world app, we might send the error to remote logging infrastructure

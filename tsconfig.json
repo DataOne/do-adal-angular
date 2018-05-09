@@ -17,16 +17,16 @@
     "types": [
       "adal"
     ],
-    // "exclude": [
-    //   "node_modules",
-    //   "dist"
-    // ],
     "typeRoots": [
       "./src"
     ],
-    "skipLibCheck": false,
-     "globalDependencies": {
-        "adal": "file:./src/adal.d.ts"
-    }
-  }
+    "skipLibCheck": false
+    // "globalDependencies": {
+    //   "adal": "file:./src/adal.d.ts"
+    // }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

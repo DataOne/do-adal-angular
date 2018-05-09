@@ -2,9 +2,9 @@
  *
  *
  * @export
- * @class Adal5User
+ * @class DoAdalUser
  */
-export class Adal5User {
+export class DoAdalUser {
     authenticated: boolean;
     username: string;
     error: string;

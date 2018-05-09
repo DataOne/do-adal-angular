@@ -1,5 +1,5 @@
 // main export file
-export { Adal5User } from './adal5-user';
-export { Adal5Service } from './adal5.service';
-export { Adal5HTTPService } from './adal5-http.service';
-export { Adal5Interceptor } from './adal5-interceptor';
+export { DoAdalUser } from './doAdal-user';
+export { DoAdalService } from './doAdal.service';
+export { DoAdalHttpService } from './doAdal-http.service';
+export { DoAdalInterceptor } from './doAdal-interceptor';
