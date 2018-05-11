@@ -190,7 +190,10 @@ export class DoAdalHttpService {
     withCredentials?: boolean;
   }): Observable<string> {
 
-    const resource = this.service.GetResourceForEndpoint(url);
+    let resource = this.service.GetResourceForEndpoint(url);
+    if (url.indexOf('localhost') > -1) {
+      resource = this.service.config.loginResource;
+    }
     let authenticatedCall: Observable<string>;
     if (resource) {
       if (this.service.userInfo.authenticated) {
