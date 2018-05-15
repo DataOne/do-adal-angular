@@ -202,7 +202,7 @@ export class DoAdalHttpService {
             if (options.headers == null) {
               options.headers = new HttpHeaders();
             }
-            options.headers = options.headers.append('Authorization', 'Bearer ' + token);
+            options.headers = options.headers.set('Authorization', 'Bearer ' + token);
             return this.http.request(method, url, options)
               .catch(this.handleError);
           });
