@@ -1,3 +1,5 @@
+> **⚠ Warning:** [Use Microsoft Authentication Library for JavaScript (MSAL.js)](https://github.com/AzureAD/microsoft-authentication-library-for-js) instead.
+
 # Data One Adal for Angular 5+
 Wrapper for Azure Active Directory Authentication Library to support Angular (> v5)
 
