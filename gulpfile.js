@@ -1,6 +1,6 @@
 // to run local gulp: ./node_modules/.bin/gulp <task>
 // to create dist: ./node_modules/.bin/gulp package
-// to publish package: npm publish ./dist
+// to publish package: cd dist; npm publish; cd ..\
 
 var bump = require('gulp-bump'),
     del = require('del'),
